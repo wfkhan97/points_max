@@ -3,25 +3,26 @@
 ## 1. Overview
 
 ### 1.1 Purpose
-*Describe the purpose of this document and the overall goals of the product.*
+The purpose of this document is to outline the requirements for a service that helps users optimize their credit card rewards. This service analyzes a user's credit card statement and the types of credit cards they have in their wallet, then provides recommendations on which charges should be placed on different cards to maximize rewards and benefits.
 
 ### 1.2 Background
-*Provide background information about the product, the problem it's solving, and any context needed.*
+Credit card users often have multiple cards, each with its own set of rewards and benefits (e.g., cashback on dining, travel points, grocery discounts). However, users may not always use the optimal card for each purchase, leading to missed opportunities for maximizing rewards. This service addresses that problem by analyzing spending patterns and available credit card rewards, then offering actionable insights to help users make smarter spending decisions.
 
 ### 1.3 Objectives
-*List the primary objectives or success metrics for this product.*
+- Provide users with clear recommendations on how to distribute their charges across different credit cards for optimal rewards.
+- Increase user awareness and understanding of their credit card benefits.
+- Help users maximize the rewards (cashback, points, discounts) they earn from their credit card spending.
+- Simplify the decision-making process for users managing multiple credit cards.
 
 ---
 
 ## 2. Stakeholders
 
 ### 2.1 Primary Contacts
-| Role           | Name           | Department   | Contact Information |
-|----------------|----------------|--------------|----------------------|
-| Product Owner  | [Name]         | [Department] | [Email/Phone]       |
-| Project Manager| [Name]         | [Department] | [Email/Phone]       |
-| Engineering Lead | [Name]       | [Department] | [Email/Phone]       |
-| UX Designer    | [Name]         | [Department] | [Email/Phone]       |
+| Role           | Name           | GitHub User |
+|----------------|----------------|----------------------|
+| Product Owner  | Wally Khan       | wfkhan97       |
+| Engineering Lead | George Tucker       | [Email/Phone]       |
 
 ### 2.2 Additional Stakeholders
 *List any additional teams or individuals involved (e.g., marketing, customer support, etc.).*
