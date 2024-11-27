@@ -32,10 +32,41 @@ Credit card users often have multiple cards, each with its own set of rewards an
 ## 3. Product Scope
 
 ### 3.1 In Scope
-*Define the key features and functionalities that are within the scope of this release.*
+The first version of the product (MVP) will include the following capabilities:
+
+1. **User Input**:
+   - Users can upload a CSV file containing their transaction history from one or multiple credit cards.
+   - Users can specify the American Express credit card products they hold (these may or may not be represented in the transaction CSV).
+
+2. **Merchant Categorization**:
+   - The product will categorize each merchant based on the industry type (e.g., dining, travel, groceries) using the transaction data provided in the CSV.
+
+3. **Rewards Optimization**:
+   - For each transaction, the product will analyze the user's selected credit card products to determine if a different card would provide greater rewards for that transaction.
+   - This analysis will consider the rewards structure of each card (e.g., bonus points for dining, travel credits).
+
+4. **Output**:
+   - The product will generate a file (e.g., CSV or downloadable report) that includes:
+     - A list of transactions identified as better suited for a different card.
+     - The estimated additional rewards points or value the user could gain by using the optimal card for each transaction.
+     - A detailed explanation for each recommendation, including:
+       - The categorized merchant type.
+       - The rationale for why the alternative card is better (e.g., higher reward rate for the category).
+
+5. **Report Accuracy**:
+   - Recommendations will be based solely on the information provided in the uploaded transaction CSV and the user-specified credit card products.
+   - Only American Express credit cards will be supported in this MVP.
 
 ### 3.2 Out of Scope
-*List features and functionalities that are explicitly out of scope.*
+The following features are not included in this MVP and may be considered for future releases:
+- Support for credit cards from other issuers (e.g., Visa, Mastercard, Discover).
+- Real-time integration with credit card providers or bank accounts.
+- Analysis of non-rewards factors such as credit limits, interest rates, or fees.
+- Dynamic updates to credit card reward structures or promotions.
+- Advanced visualizations or interactive dashboards for the recommendations.
+- Multi-user support or sharing capabilities.
+- Recommendations that involve opening new credit cards or applying for additional products.
+- Support for input file formats other than CSV.
 
 ---
 
