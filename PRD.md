@@ -73,19 +73,32 @@ The following features are not included in this MVP and may be considered for fu
 ## 4. User Stories & Requirements
 
 ### 4.1 User Personas
-*Briefly describe the target users, their roles, needs, and goals.*
+#### Primary User Persona:
+- **Name**: Credit Card Optimizer
+- **Role**: Individual who actively manages multiple American Express credit cards and wants to maximize rewards from their spending.
+- **Needs**: A simple tool to identify transactions that could earn more rewards with better card usage and a clear understanding of the rationale behind recommendations.
 
 ### 4.2 User Stories
-| ID   | User Story                                        | Priority | Notes             |
-|------|---------------------------------------------------|----------|-------------------|
-| US-01| As a [user], I want to [action], so that [goal]. | High     | [Additional notes]|
-| US-02| As a [user], I want to [action], so that [goal]. | Medium   | [Additional notes]|
+| ID     | User Story                                                                                         | Priority | Notes                         |
+|--------|----------------------------------------------------------------------------------------------------|----------|-------------------------------|
+| US-01  | As a user, I want to upload a CSV containing my transaction history, so that the product can analyze my spending. | High     | CSV structure must be defined. |
+| US-02  | As a user, I want to specify the American Express credit cards I have, so that the product knows which cards to evaluate. | High     | Input method for card selection. |
+| US-03  | As a user, I want the product to categorize each transaction by merchant type, so that it can determine applicable reward categories. | High     | Merchant type classification logic. |
+| US-04  | As a user, I want the product to identify transactions that could earn more rewards on a different card, so that I can optimize my future spending. | High     | Accuracy of rewards comparison is key. |
+| US-05  | As a user, I want the product to generate a downloadable file listing recommendations, so that I can review and use the results offline. | High     | File format should be user-friendly. |
+| US-06  | As a user, I want the recommendations to include an explanation of why a different card is better, so that I can understand the rationale. | High     | Rationale should include merchant category and card-specific rewards details. |
+| US-07  | As a user, I want an estimate of the additional rewards I could gain, so that I can see the potential benefits of optimizing my spending. | High     | Rewards value should be presented clearly. |
 
 ### 4.3 Functional Requirements
-| ID    | Requirement Description                            | User Story ID | Priority | Acceptance Criteria                       |
-|-------|----------------------------------------------------|---------------|----------|-------------------------------------------|
-| FR-01 | The system shall [requirement description].       | US-01         | High      | [List criteria for acceptance]            |
-| FR-02 | The system shall [requirement description].       | US-02         | Medium    | [List criteria for acceptance]            |
+| ID     | Requirement Description                                                              | User Story ID | Priority | Acceptance Criteria                             |
+|--------|--------------------------------------------------------------------------------------|---------------|----------|-------------------------------------------------|
+| FR-01  | The system shall allow users to upload a CSV file containing transaction data.       | US-01         | High      | File upload functionality supports defined format. |
+| FR-02  | The system shall enable users to select multiple American Express credit cards.      | US-02         | High      | Users can specify card products through an interface. |
+| FR-03  | The system shall categorize transactions by merchant type based on industry.         | US-03         | High      | Merchant types are correctly classified.         |
+| FR-04  | The system shall compare rewards earned per transaction across user-specified cards. | US-04         | High      | Transactions that could earn more rewards are identified. |
+| FR-05  | The system shall generate a downloadable file with transaction recommendations.      | US-05         | High      | Output file includes all identified transactions and recommendations. |
+| FR-06  | The system shall provide an explanation for each recommendation.                    | US-06         | High      | Recommendations include merchant type and rationale. |
+| FR-07  | The system shall estimate and display additional rewards points for optimized spending. | US-07       | High      | Estimated rewards are calculated and presented. |
 
 ---
 
